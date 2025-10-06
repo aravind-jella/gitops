@@ -3,6 +3,7 @@ kind: Deployment
 metadata:
   name: my-webapp
 spec:
+  namespace: www
   replicas: 3
   selector:
     matchLabels:
