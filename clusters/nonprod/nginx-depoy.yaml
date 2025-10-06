@@ -3,7 +3,6 @@ kind: Deployment
 metadata:
   name: my-webapp
 spec:
-  namespace: www
   replicas: 3
   selector:
     matchLabels:
@@ -15,6 +14,6 @@ spec:
     spec:
       containers:
       - name: my-webapp
-        image: nginx:1.7.9
+        image: nginx:alpine
         ports:
         - containerPort: 80
