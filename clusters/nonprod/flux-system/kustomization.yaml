@@ -8,7 +8,8 @@ patches:
       kind: ServiveAccount
       namespace: flux-system
       name: source-controller
+      version: v1
     patch: |-
       - op: add
         path: /metadata/annotations/iam.gke.io~1gcp-service-account
-        value: "MY NAME IS ARAVIND"
+        value: "MY-NAME-IS-ARAVIND"
