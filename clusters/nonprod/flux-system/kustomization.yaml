@@ -4,11 +4,11 @@ resources:
 - gotk-components.yaml
 - gotk-sync.yaml
 patches:
-- target:
-    kind: ServiveAccount
-    namespace: flux-system
-    name: source-controller
-  patch: /-
-    - op: add
-      path: /metadata/annotations/iam.gke.io~1gcp-service-account
-      value: "MY NAME IS ARAVIND"
+  - target:
+      kind: ServiveAccount
+      namespace: flux-system
+      name: source-controller
+    patch: /-
+      - op: add
+        path: /metadata/annotations/iam.gke.io~1gcp-service-account
+        value: "MY NAME IS ARAVIND"
