@@ -5,7 +5,7 @@ resources:
 - gotk-sync.yaml
 patches:
   - target:
-      group: Kustomize.toolkit.fluxcd.io
+      group: kustomize.toolkit.fluxcd.io
       version: v1
       kind: Kustomization
       name: flux-system 
